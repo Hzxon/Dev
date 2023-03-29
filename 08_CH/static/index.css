@@ -1,0 +1,92 @@
+section.hero {
+    display: flex;
+    /* height: 100vh; */
+    /* width: 100%; */
+    /* padding-top: 100px; */
+    /* background: url('static/img/shuttle.jpeg') center / cover no-repeat; */
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: left; */
+    background-color: aliceblue;
+    background: url('img/bg.jpeg') center / cover no-repeat;
+    color: antiquewhite;
+    
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+section.hero .players-h2 {
+    font-size: 35px;
+    /* padding-left: 20px; */
+    text-align: center;
+}
+
+section.hero .players-img {
+    width: 70%;
+    height: 800px;
+    /* box-sizing: border-box; */
+    border-radius: 30px;
+    padding-left: 200px;
+}
+
+/* section.hero .tour-h2 {
+    padding-left: 500px;  
+    text-align: right;
+} */
+
+section.hero .tour-img {
+    padding-top: 50px;
+}
+
+section.about .about-content {
+    display: flex;
+    width: 100%;
+    /* background: rgba(133, 47, 13, 0.8); */
+    background: grey;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.about .about-content .about-card {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+section.about .about-content .about-card img {
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+}
+
+section.about .about-content .about-text {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section.about .about-content .about-text p {
+    /* width: 800px; */
+    height: auto;
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: white;
+}
+
+section.about .about-content .about-text h2 {
+    /* width: 800px; */
+    height: auto;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 15px;
+}

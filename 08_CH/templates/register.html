@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{%block title %}From Hello!{% endblock title %}
+
+{% block main %}
+
+<link rel="stylesheet" href="static/register.css">
+
+<section class="content">
+    <h1 class="h1-content">Sign Up</h1>
+
+    {% if err %}
+
+    <p>Error : {{err}}</p>
+
+    {% endif %}
+
+    <form class="form-content">
+        <input type="text" name="username" placeholder="Username" autocomplete="off" required autofocus>
+        <input type="text" name="password" placeholder="Password" autocomplete="off" required>
+        <button>Submit</button>
+    </form>
+
+    <a href="{{ url_for('login') }}">Login Page!</a>
+
+</section>
+
+{% endblock main %}

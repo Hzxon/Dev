@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH</title>
+    <style media="screen">
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: gray;
+            position: absolute;
+            animation: slidingDown 3s infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes slidingDown {
+            0% {
+                background-color: green;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: red;
+                left: 300px;
+                top: 300px;
+            }
+
+            50% {
+                background-color: blueviolet;
+                left: 0px;
+                top: 300px;
+            }
+
+            75% {
+                background-color: purple;
+                left: 300px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: rosybrown;
+                left: 0px;
+                top: 0px;
+            }
+
+            /* 150% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            } */
+
+            /* 110% {
+                background-color: red;
+                left: 300px;
+                top: 300;
+            } */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+
+    </div>
+    <marquee>SEKOLAH ELIT WIFI SULIT</marquee>
+</body>
+</html>

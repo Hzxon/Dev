@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{%block title %}From Hello!{% endblock title %}
+
+{% block main %}
+
+<link rel="stylesheet" href="static/login.css">
+
+<section class="content">
+    <h1 class="h1-content">Login First</h1>
+
+    {% if err %}
+
+    <p>Error : {{err}}</p>
+
+    {% endif %}
+
+    <form>
+        <input class="form-username" type="text" name="username" placeholder="Username" autocomplete="off" required autofocus>
+        <input class="form-password" type="text" name="password" placeholder="Password" autocomplete="off" required>
+        <button>Submit</button>
+    </form>
+
+    <a href="{{ url_for('register') }}">Sign Up here ...</a>
+
+    <a href="{{ url_for('index') }}">Back home!</a>
+</section>
+
+
+{% endblock main %}

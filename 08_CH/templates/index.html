@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %} Insert Photo / Image{% endblock %}
+
+{% block main %}
+
+<link rel="stylesheet" href="static/index.css">
+<!-- <link rel="stylesheet" href="static/index.js"> -->
+
+<h1>Your sport statistics, one place</h1>
+
+<section class="hero">
+
+    <!-- <img src="{{ url_for('static', filename='img/badminton.png') }}" style="width: 200px;"> -->
+    <ul>
+        {% for name in names %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2 class="players-h2">World Top Players</h2>
+    <img class="players-img" src="static/img/players.jpeg" alt="">
+
+    <!-- <h2 class="tour-h2">Tournaments</h2> -->
+    <img class="tour-img" src="static/img/tournaments.png" alt="">
+
+
+</section>
+<section class="about"></section>
+<section class="about">
+    <div class="about-content">
+        <div class="about-content-item about-card">
+            <img src="static/img/Viktor-axelsen.jpeg" alt="Viktor Axelsen image">
+        </div>
+        <div class="about-content-item about-text">
+            <h2>Viktor Axelsen</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut impedit architecto laudantium exercitationem dolore dolor. Illo, explicabo mollitia quam amet, illum voluptas quasi debitis porro nisi assumenda dignissimos ab cumque!
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© COPYRIGHT 2021 BADMINTON WORLD FEDERATION. ALL RIGHTS RESERVED. THE CONTENT OF THIS WEBSITE IS THE PROPERTY OF BWF OR USED UNDER LICENCE BY BWF. NO PART MAY BE COPIED, REPUBLISHED, STORED, OR OTHERWISE REPUBLISHED OR TRANSMITTED WITHOUT THE PRIOR WRITTEN PERMISSION OF BWF. FOR FURTHER INFORMATION, PLEASE REFER TO OUR
+        TERMS & CONDITIONS.</p>
+
+    <a class="home" href="{{ url_for('index') }}">Home!</a>
+</footer>
+
+{% endblock main %}

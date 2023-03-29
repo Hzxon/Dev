@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/layout.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="nav-item logo">
+                <h4>BWF-Badminton</h4>
+            </div>
+
+            <ul class="nav-item menu-nav">
+                <li><a href="{{ url_for('mens_doubles') }}">Men's Doubles</a></li>
+                <li><a href="{{ url_for('mens_single') }}">Men's Singles</a></li>
+                <li><a href="{{ url_for('woman_doubles') }}">Woman's Doubles</a></li>
+                <li><a href="{{ url_for('woman_single') }}">Woman's Singles</a></li>
+                <li><a href="{{ url_for('more') }}">Info</a>
+            </ul>
+            <a href="{{ url_for('login') }}" class="nav-item btn-login">Login</a>
+
+            <div class="nav-item menu-toggle">
+                <span class="manu-toggle-item"></span>
+                <span class="manu-toggle-item"></span>
+                <span class="manu-toggle-item"></span>
+            </div>
+
+        </nav>
+    </header>
+    <section is="main-section">
+        {% block main %}
+
+        {% endblock main %}
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(space.jpeg);
+            background-size: 100%;
+        }
+
+        p {
+            color: white;
+            font-family: system-ui;
+            position: absolute;
+            left: -62px;
+            top: -11px;
+        }
+
+        .sun {
+            height: 120px;
+            width: 120px;
+            background-image: url(sun.png);
+            border-radius: 50%;
+            background-size: cover;
+            box-shadow: -4px 2px 56px #f9c05f;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mercury-tag, .venus-tag, .earth-tag {
+            border-radius: 50%;
+            border: 1px dotted #ddd9;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mercury-planet {
+            height: 20px;
+            width: 20px;
+            background: rgb(158, 64, 27);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #f9c05f;
+            left: 43%;
+            top: 42%;
+            animation: orbit2 2s linear infinite;
+        }
+
+        .mercury-tag {
+            height: 140px;
+            width: 140px;
+        }
+
+        .venus-planet {
+            height: 40px;
+            width: 40px;
+            background: rgb(155, 142, 101);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #f9c05f;
+            left: 40%;
+            top: 42%;
+            animation: orbit3 5s linear infinite;
+        }
+
+        .venus-tag {
+            height: 200px;
+            width: 200px;
+        }
+
+        .earth-planet {
+            height: 50px;
+            width: 50px;
+            background: rgb(24, 81, 155);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #f9c05f;
+            left: 44%;
+            top: 43%;
+            animation: orbit4 10s linear infinite;
+        }
+
+        .earth-tag {
+            height: 300px;
+            width: 300px;
+        }
+
+        .moon-planet {
+            height: 10px;
+            width: 10px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 45%;
+            top: 45%;
+            animation: earth-orbit 3s linear infinite;
+        }
+
+        .moon-tag {
+            height: 65px;
+            width: 65px;
+            border: 1px dotted #fff;
+            position: relative;
+            left: -8px;
+            top: -8px;
+            border-radius: 40px;
+        }
+
+        @keyframes orbit2 {
+            from {
+                transform: rotate(0deg) translateX(70px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(70px) rotate(-360deg);
+            }
+        }
+
+        @keyframes orbit3 {
+            from {
+                transform: rotate(0deg) translateX(100px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(100px) rotate(-360deg);
+            }
+        }
+
+        @keyframes orbit4 {
+            from {
+                transform: rotate(0deg) translateX(150px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(150px) rotate(-360deg);
+            }
+        }
+
+        @keyframes earth-orbit {
+            from {
+                transform: rotate(0deg) translateX(33px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(33px) rotate(-360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sun">
+
+    </div>
+
+    <div class="mercury-tag">
+        <div class="mercury-planet">
+            <p>Mercury</p>
+        </div>
+    </div>
+
+    <div class="venus-tag">
+        <div class="venus-planet">
+            <p>Venus</p>
+        </div>
+    </div>
+
+    <div class="earth-tag">
+        <div class="earth-planet">
+            <div class="moon-tag">
+                <div class="moon-planet">
+                    <p>Moon</p>
+                </div>
+            </div>
+            <p>Earth</p>
+        </div>
+    </div>
+</body>
+</html>
